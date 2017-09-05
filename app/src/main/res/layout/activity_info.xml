@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/basics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/info_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/info_Google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/standard_pad"
+            android:src="@drawable/gbs_preview_button1" />
+
+        <LinearLayout
+            android:id="@+id/basic_holder"
+            android:layout_toRightOf="@id/info_cover"
+            android:layout_toLeftOf="@id/info_Google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_title"
+                style="@style/Text.Title"
+                tools:text="Title of the book" />
+
+            <TextView
+                android:id="@+id/info_author"
+                style="@style/Text"
+                tools:text="Author of the book" />
+
+            <LinearLayout
+                android:id="@+id/pub_date_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/info_publisher"
+                    style="@style/Text"
+                    tools:text="Publisher, Date" />
+
+                <TextView
+                    android:id="@+id/info_date"
+                    style="@style/Text"
+                    tools:text="MM/YYYY" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/description_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basics">
+
+        <TextView
+            android:id="@+id/info_description"
+            style="@style/Text"
+            android:layout_gravity="center_horizontal"
+            tools:text="Description provided about the book, which can span multiple lines, so as to give the user a quick overview of the subject matter before clicking on the item to find out more." />
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_holder"
+        android:layout_marginTop="@dimen/small_pad">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/info_language"
+            style="@style/Text"
+            android:background="@drawable/corner_left"
+            android:padding="@dimen/standard_pad"
+            android:textColor="@color/colorPrimary"
+            tools:text="Language" />
+
+        <TextView
+            android:id="@+id/info_category"
+            style="@style/Text"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/corner_right"
+            android:padding="@dimen/standard_pad"
+            android:textColor="@color/colorPrimary"
+            tools:text="Category" />
+    </RelativeLayout>
+</RelativeLayout>

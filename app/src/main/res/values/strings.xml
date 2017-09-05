@@ -1,0 +1,21 @@
+<!-- app icon: http://www.clipartpanda.com -->
+
+<resources>
+    <string name="app_name">Book Look</string>
+    <string name="api_key">keyes&amp;key=AIzaSyChy9kVWCT7a0cVMQIB9agrmMXS2Chcbuc</string>
+
+    <string name="by">by\u0020</string>
+    <string name="comma">,\u0020</string>
+    <string name="search">Book / Keyword Search</string>
+    <string name="free_text">Free Text</string>
+    <string name="author">Author</string>
+    <string name="title">Title</string>
+    <string name="look_for_books">Look for Books</string>
+    <string name="author_empty"><i>No authors listed</i></string>
+    <string name="description_empty"><i>No description listed</i></string>
+    <string name="newLine">\n</string>
+    <string name="any_language">any language</string>
+    <string name="search_prompt">Start by searching.</string>
+    <string name="no_results">No search results.</string>
+    <string name="no_internet">No internet available.</string>
+</resources>

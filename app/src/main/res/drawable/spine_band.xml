@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- based off of http://stackoverflow.com/questions/5197892/add-shadow-to-custom-shape-on-android
+ jmachete 's answer.-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- over top shadow -->
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="180"
+                android:centerColor="@color/redLight"
+                android:centerY="0.5"
+                android:endColor="@color/redDark"
+                android:startColor="#99000000"
+                android:type="linear"/>
+        </shape>
+    </item>
+    <!-- over bottom shadow -->
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="0"
+                android:centerColor="@color/redLight"
+                android:centerY="0.5"
+                android:endColor="@color/redDark"
+                android:startColor="#99000000"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

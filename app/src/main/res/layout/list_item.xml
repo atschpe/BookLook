@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="@dimen/small_pad"
+    android:background="@drawable/bookspine"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.example.android.booklook.VerticalTextView
+            android:id="@+id/list_category"
+            style="@style/Text.Turned"
+            android:layout_weight="1"
+            tools:text="Category" />
+
+        <TextView
+            android:id="@+id/list_title"
+            style="@style/Text.Title"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/standard_pad"
+            android:layout_weight="6"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Title of the book" />
+
+        <com.example.android.booklook.VerticalTextView
+            android:id="@+id/list_author"
+            style="@style/Text.Turned"
+            android:layout_weight="1"
+            tools:text="Author of the book" />
+
+        <View
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/folds" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fold_pad"
+        android:src="@drawable/folds" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/fold_pad"
+        android:src="@drawable/folds" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/folds" />
+</RelativeLayout>
